@@ -958,7 +958,7 @@ bool ofxKinectCommonBridge::start()
 		return false;
 	}
 
-	startThread(true, false);
+	startThread(true);
 	bStarted = true;	
 
 	return true;

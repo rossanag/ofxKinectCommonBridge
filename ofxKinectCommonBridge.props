@@ -5,15 +5,15 @@
   <PropertyGroup />
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalLibraryDirectories>$(KINECTSDK10_DIR)\lib\x86;..\..\..\addons\ofxKinectCommonBridge\libs\KinectCommonBridge\lib\windows;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(KINECTSDK10_DIR)\lib\x86;..\..\..\addons\ofxKinectCommonBridge\libs\KinectCommonBridge\lib\windows\vs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>KinectCommonBridge.lib;Kinect10.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\addons\ofxKinectCommonBridge\libs\KinectCommonBridge\include;$(KINECTSDK10_DIR)inc;$(KINECT_TOOLKIT_DIR)inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PostBuildEvent>
-      <Command>xcopy /e /i /y "$(ProjectDir)..\..\..\export\vs\*.dll" "$(ProjectDir)bin"
-xcopy /e /i /y "..\..\..\addons\ofxKinectCommonBridge\libs\KinectCommonBridge\lib\windows\*.dll" "$(ProjectDir)bin"
+      <Command>xcopy /e /i /y "$(ProjectDir)..\..\..\export\vs\win32\*.dll" "$(ProjectDir)bin"
+xcopy /e /i /y "..\..\..\addons\ofxKinectCommonBridge\libs\KinectCommonBridge\lib\vs\*.dll" "$(ProjectDir)bin"
 %(Command)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
