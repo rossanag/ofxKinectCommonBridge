@@ -1,0 +1,5 @@
+ofxDatGui
+ofxGui
+ofxKinectCommonBridge
+ofxNetwork
+ofxOsc
