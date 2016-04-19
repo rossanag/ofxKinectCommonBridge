@@ -7,7 +7,7 @@
 #include "NuiSensor.h"
 #include "ofMain.h" // this MUST come after KCB!!! Not sure you need NuiSensor.h if using KCB
 
-#pragma comment (lib, "KinectCommonBridge.lib") // add path to lib additional dependency dir $(TargetDir)
+//#pragma comment (lib, "KinectCommonBridge.lib") // add path to lib additional dependency dir $(TargetDir)
 
 #ifdef KCB_ENABLE_FT
 #pragma comment(lib, "FaceTrackLib.lib")
